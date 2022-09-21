@@ -13010,7 +13010,7 @@ MonoBehaviour:
   light: {fileID: 695013331}
   originalLightColor: {r: 1, g: 0.9843137, b: 0.8352941, a: 0}
   newLightColor: {r: 0.5568628, g: 0.14117648, b: 0.13333334, a: 0}
-  flashCount: 2
+  flashCount: 5
   randomInterval: 0
 --- !u!1 &2061575033
 GameObject:
