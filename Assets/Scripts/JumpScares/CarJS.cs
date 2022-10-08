@@ -33,8 +33,6 @@ public class CarJS : MonoBehaviour
 
     public IEnumerator Fade(GameObject obj, float seconds)
     {
-        obj.SetActive(false);
-        yield return new WaitForSeconds(seconds);
         obj.SetActive(true);
         yield return new WaitForSeconds(seconds);
         obj.SetActive(false);
@@ -48,6 +46,8 @@ public class CarJS : MonoBehaviour
         obj.SetActive(false);
         yield return new WaitForSeconds(seconds);
         obj.SetActive(true);
+        yield return new WaitForSeconds(seconds);
+        obj.SetActive(false);
         yield return new WaitForSeconds(seconds);
 
     }
