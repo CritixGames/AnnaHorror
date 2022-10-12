@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ExitDoor : MonoBehaviour
 {
@@ -58,7 +59,14 @@ public class ExitDoor : MonoBehaviour
         door1.SetBool("Closed", false);
         doorSound1.Play();
         blackScreen.SetActive(true);
+        StartCoroutine(ExitTimer(5));
 
+    }
+
+    public IEnumerator ExitTimer(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        SceneManager.LoadScene("MainGame");
     }
 
 
