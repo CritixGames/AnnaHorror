@@ -5273,7 +5273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &740953845
 Transform:
   m_ObjectHideFlags: 0
@@ -16210,6 +16210,22 @@ PrefabInstance:
     - target: {fileID: 2616104164641458842, guid: c4fc5937739b95241a051880b0d21b72, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616104165009362266, guid: c4fc5937739b95241a051880b0d21b72, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616104165009362268, guid: c4fc5937739b95241a051880b0d21b72, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.654329
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616104165009362268, guid: c4fc5937739b95241a051880b0d21b72, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.007
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616104165009362268, guid: c4fc5937739b95241a051880b0d21b72, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.113
       objectReference: {fileID: 0}
     - target: {fileID: 2616104166251182760, guid: c4fc5937739b95241a051880b0d21b72, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
