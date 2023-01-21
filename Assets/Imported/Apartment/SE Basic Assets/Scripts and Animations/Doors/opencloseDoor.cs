@@ -11,6 +11,7 @@ namespace SojaExiles
 		public Animator openandclose;
 		public bool open;
 		public Transform Player;
+		public AudioSource doorsfx;
 
 		void Start()
 		{
@@ -23,13 +24,14 @@ namespace SojaExiles
 				if (Player)
 				{
 					float dist = Vector3.Distance(Player.position, transform.position);
-					if (dist < 15)
+					if (dist < 3)
 					{
 						if (open == false)
 						{
 							if (Input.GetMouseButtonDown(0))
 							{
 								StartCoroutine(opening());
+								doorsfx.Play();
 							}
 						}
 						else
@@ -39,6 +41,7 @@ namespace SojaExiles
 								if (Input.GetMouseButtonDown(0))
 								{
 									StartCoroutine(closing());
+									doorsfx.Play();
 								}
 							}
 
@@ -53,7 +56,6 @@ namespace SojaExiles
 
 		IEnumerator opening()
 		{
-			print("you are opening the door");
 			openandclose.Play("Opening");
 			open = true;
 			yield return new WaitForSeconds(.5f);
@@ -61,7 +63,6 @@ namespace SojaExiles
 
 		IEnumerator closing()
 		{
-			print("you are closing the door");
 			openandclose.Play("Closing");
 			open = false;
 			yield return new WaitForSeconds(.5f);
